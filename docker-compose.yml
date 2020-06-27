@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  demo-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: demo:v2
+    expose:
+      - 80

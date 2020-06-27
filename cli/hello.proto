@@ -1,0 +1,13 @@
+syntax="proto3";
+
+message Msg {
+  string Val = 1;
+}
+
+message MsgResp {
+  string Val = 1;
+}
+
+service Hello {
+  rpc Say(Msg) returns (MsgResp);
+}
